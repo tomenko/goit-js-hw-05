@@ -11,24 +11,24 @@
 class StringBuilder {
     constructor(str) {
         this._value = str;
-    };
+    }
 
     get value() {
         return this._value;
-    };
+    }
 
     append(str) {
         this._value = this.value + str;
-    };
+    }
 
     prepend(str) {
         this._value = str + this.value;
-    };
+    }
 
     pad(str) {
         this._value = str + this.value + str;
-    };   
-};
+    }  
+}
 
 const builder = new StringBuilder('.');
 

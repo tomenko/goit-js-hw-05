@@ -11,15 +11,15 @@ removeItem(item) - получет товар и, если он есть, уда�
 class Storage {
     constructor(items) {
         this._items = items;
-    };
+    }
 
     getItems() {
         return this._items;
-    };
+    }
 
     addItem(item) {
         this._items.push(item);
-    };
+    }
 
     removeItem(removeItem) {
         const newItems = [];
@@ -30,9 +30,9 @@ class Storage {
         };
 
         this._items = newItems;
-    };
+    }
 
-};
+}
 
 const storage = new Storage([
   'Нанитоиды',
